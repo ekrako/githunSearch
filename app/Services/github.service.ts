@@ -22,4 +22,7 @@ export class GithubService {
     + '/repos?client_id=' + this.client_id + '&client_secret=' + this.client_secret)
       .map(res => res.json());
   }
+  updateUser(username: string) {
+    this.username = username;
+  }
 }
